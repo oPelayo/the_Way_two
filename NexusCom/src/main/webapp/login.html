@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css" />
+    <script src="Js/JavaScript.js"></script>
+    <link rel="icon" type="image/png" href="fotos/favicon.png">
+
+</head>
+
+<body>
+	
+    <header>
+     <div class="logo1" >
+     	<a href="./Index.html" >
+        	<img src="./fotos/fotosHeader/Cuylas_Logo_Web.png"
+           	 width="16%" name="cuylasLogo" id="logoCuylas" alt="Cuylas"></a>
+     </div>   
+     	 
+     <div  class="searchName" >
+     	<form action="Listado" id="formBuscador" method="GET" onsubmit="obtenerPorNombre()" >
+     	<input type="text" class="inputBuscador" id="inputBuscador" name="buscar" placeholder="Buscar Productos">
+     	<input type="submit" class="botonBuscar" id="botonBuscar" value="Buscar" >
+     	</form> 
+     </div>
+     
+     <div class="objeto" id="objeto">
+     	<a href="administracion.html">
+     		<img src="./fotos/web/boba.png" id="hipervinAdm" style="width: 6%" alt="adminMenu" >
+     	</a>
+     </div>
+     
+        
+     <div class="sesion" id="sesion">
+     
+     </div>
+        
+        <nav>
+            <ul>
+                <li><a href="#">Mujer</a>
+                    <ul>
+                        <li><a href="#">Esqui</a></li>
+                        <li><a href="#">Montaña</a></li>
+                        <li><a href="#">Zapatillas</a></li>
+                        <li><a href="#">Running</a></li>
+                        <li><a href="#">Training</a></li>
+                        <li><a href="#">Yoga</a></li>
+                        <li><a href="#">Lifestyle</a></li>
+                        <li><a href="#">Natacion</a></li>
+                        <li><a href="#">Tennis y Padel</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Hombre</a>
+                    <ul>
+                        <li><a href="#">Esqui</a></li>
+                        <li><a href="#">Montaña</a></li>
+                        <li><a href="#">Zapatillas</a></li>
+                        <li><a href="#">Running</a></li>
+                        <li><a href="#">Training</a></li>
+                        <li><a href="#">Yoga</a></li>
+                        <li><a href="#">Lifestyle</a></li>
+                        <li><a href="#">Natacion</a></li>
+                        <li><a href="#">Tennis y Padel</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Junior</a>
+                    <ul>
+                        <li><a href="#">Esqui</a></li>
+                        <li><a href="#">Montaña</a></li>
+                        <li><a href="#">Accesorios</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Material</a></li>
+                <li><a href="https://cuylas.com/blog">Blog</a></li>
+               <li><a href="carrito.html" class="carrito" id="carrito">Carrito<img src="fotos/web/cart.png" alt="Carrito"></a>
+                	<ul class="carritoDesplegable" id="carritoDesplegable">
+                		<div class="itemCarrito" id="itemCarrito">
+                            <img src="http://localhost:8080/NexusCom/fotos/fotosArticulos/m_621.jpg">
+                            <div>item.nombre</div>
+                            <div>item.precio€</div>
+                            <button onclick="eliminarDelCarrito(item.id_articulo)">Eliminar</button>
+                        </div>
+                	</ul>
+                </li>
+                <li>
+                    <div class="botones">
+                	    <button onclick="location.href='login.html'" name="submit" id="iniciarSesion" >Inicia sesión</button>
+	  				    <button onclick="cerrarSesion()" id="cerrarSesion">Salir</button>
+                    </div>
+	  			</li>	
+            </ul>
+        </nav>
+    </header>
+	<div class="" >
+	
+	</div>
+	<form action="Login" class="login" name="login" id="login" method="post" style="width:30%">
+		<h1 class="title">Iniciar Sesión</h1>
+		<label> 
+			<img src="./fotos/web/user.png" class="user" width="16px"> 
+			<input	placeholder="Usuario" type="text" name="username" id="username">
+		</label> 
+		<label> 
+			<img src="./fotos/web/lock.png" class="lock" width="16px"> 
+			<input placeholder="Contraseña" type="password" name="password" id="password">
+		</label>
+		<a href="#" class="link-pagina-recuperar">¿Has olvidado tu contraseña?</a>
+		<a href="altaUsuario.html" class="altaNuevoUsuario">Registrate con nosotros</a>
+		<button type="submit" id="button">Login</button>
+
+	</form>
+
+</body>
+
+<footer>
+	<div class="copyrigthFooter">
+            <h5>Copyright © 2023 NexusCom Todos los derechos reservados</h5> 
+        </div>
+        <div class="pagoFooter">
+            <h5>Pago 100% Seguro | PayPal | Mastercard | Visa</h5> 
+        </div>
+</footer>
+</html>

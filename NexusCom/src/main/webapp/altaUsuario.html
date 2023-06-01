@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Alta Nuevo Usuario</title>
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css" />
+    <script src="Js/JavaScript.js"></script>
+    <link rel="icon" type="image/png" href="fotos/favicon.png">
+</head>
+<body>
+
+	<header>
+     <div class="logo1" >
+     	<a href="./Index.html" >
+        	<img src="./fotos/fotosHeader/Cuylas_Logo_Web.png"
+           	 width="16%" name="cuylasLogo" id="logoCuylas" alt="Cuylas"></a>
+     </div>   
+     	 
+     <div  class="searchName" >
+     	<form action="Listado" id="formBuscador" method="GET" onsubmit="obtenerPorNombre()" >
+     	<input type="text" class="inputBuscador" id="inputBuscador" name="buscar" placeholder="Buscar Productos">
+     	<input type="submit" class="botonBuscar" id="botonBuscar" value="Buscar" >
+     	</form> 
+     </div>
+     
+     <div id="objeto">
+     	<a href="administracion.html">
+     		<img src="./fotos/web/boba.png" id="hipervinAdm" style="width: 6%" alt="adminMenu" >
+     	</a>
+     </div>
+     
+        
+     <div class="sesion" id="sesion">
+     
+     </div>
+        
+        <nav>
+            <ul>
+                <li><a href="#">Mujer</a>
+                    <ul>
+                        <li><a href="#">Esqui</a></li>
+                        <li><a href="#">Montaña</a></li>
+                        <li><a href="#">Zapatillas</a></li>
+                        <li><a href="#">Running</a></li>
+                        <li><a href="#">Training</a></li>
+                        <li><a href="#">Yoga</a></li>
+                        <li><a href="#">Lifestyle</a></li>
+                        <li><a href="#">Natacion</a></li>
+                        <li><a href="#">Tennis y Padel</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Hombre</a>
+                    <ul>
+                        <li><a href="#">Esqui</a></li>
+                        <li><a href="#">Montaña</a></li>
+                        <li><a href="#">Zapatillas</a></li>
+                        <li><a href="#">Running</a></li>
+                        <li><a href="#">Training</a></li>
+                        <li><a href="#">Yoga</a></li>
+                        <li><a href="#">Lifestyle</a></li>
+                        <li><a href="#">Natacion</a></li>
+                        <li><a href="#">Tennis y Padel</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Junior</a>
+                    <ul>
+                        <li><a href="#">Esqui</a></li>
+                        <li><a href="#">Montaña</a></li>
+                        <li><a href="#">Accesorios</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Material</a></li>
+                <li><a href="#">Marcas</a></li>
+                <li><a href="carrito.html" id="carrito">Carrito<img src="fotos/web/cart.png" alt="Carrito"></a>
+                	<ul id="carritoDesplegable"></ul>
+                </li>
+                <li>
+                    <div class="botones">
+                	    <button onclick="location.href='login.html'" name="submit" id="iniciarSesion" >Inicia sesión</button>
+	  				    <button onclick="cerrarSesion()" id="cerrarSesion">Salir</button>
+                    </div>
+	  			</li>	
+            </ul>
+        </nav>
+    </header>
+
+	<div id="mensajeError">
+	
+	</div>
+	
+	<form action="AltaUsuario" class="altaUsuario" id="formularioU" method="post"
+		enctype="multipart/form-data">
+		<h2 class="title" style="color: grey">Alta Nuevo Usuario</h2>
+
+		<li><label>Nombre</label> <input type="text" name="nombre"></li>
+		<li><label>Apellidos</label> <input type="text" name="apellidos"></li>
+		<li><label>NIF</label> <input type="text" name="nif"></li>
+		<li><label>Fecha de nacimiento</label> <input type="date"
+			name="fecha_nacimiento" style="font-size: 15px"></li>
+		<li><label>Dirección</label> <input type="text" name="direccion"></li>
+		<li><label>CodigoPostal </label> <input type="number"
+			name="codigo_postal"></li>
+		<li><label>Telefono</label> <input type="text" name="telefono"></li>
+		<li><label>Email</label> <input type="text" name="email"></li>
+		<li><label>Foto</label>
+			<div class="file-select" id="src-file">
+				<input type="file" name="foto">
+			</div></li>
+		<li><label>Contraseña</label> <input type="password"
+			name="password"></li>
+		<li>Deseo recibir notificaciones publicitarias<input
+			type="checkbox" name="notificaciones" value="true"></li>
+		<li>Acepto la ley de proteccion de datos <a
+			href="https://en.wikipedia.org/wiki/General_Data_Protection_Regulation">GDPR</a><input
+			type="checkbox" name="gdpr" value="true" required></li> <input
+			type=submit class="submit" value="Inscribirse">
+
+	</form>
+	
+</body>
+<footer>
+	<div class="copyrigthFooter">
+		<h5>Copyright © 2023 NexusCom Todos los derechos reservados</h5>
+	</div>
+	<div class="pagoFooter">
+		<h5>Pago 100% Seguro | PayPal | Mastercard | Visa</h5>
+	</div>
+</footer>
+</html>

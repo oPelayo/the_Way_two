@@ -1,0 +1,534 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: calibri;
+	box-sizing: border-box;
+}
+
+header {
+	display: flex;
+	background-color: #ffffff;
+	box-shadow: 5px 2px 7px #9e9b9834;
+	padding: 9px;
+	flex-direction: column;
+	width: 100%;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	min-height: 80%;
+	background: #FFFFFF;
+	background: linear-gradient(to bottom, #f6f2f2 40%, #f79a29 90%);
+}
+
+footer {
+	display: flex;
+	position: relative;
+	padding: 0%;
+	width: 100%;
+	height: 5%;
+	margin-top: 5%;
+	background-color: #000000;
+	color: #f6f2f2;
+	justify-content: center;
+}
+
+/*Cabecera (logo y buscador)*/
+
+.logo1 {
+	position: relative;
+	top: 1px
+}
+
+.searchName {
+    display: flex;
+    justify-content: center; 
+    position: absolute;
+    top: 0.9%;
+    width: 100%; 
+    box-shadow: none;
+    outline: none;
+    border: none;
+}
+
+#buscador {
+    display: flex;
+    align-items: center; 
+}
+
+#inputBuscador {
+    border: none;
+    padding: 1px;
+	width: 80%;
+    border-bottom: 2px solid grey;
+}
+
+#botonBuscar {
+    border: none;
+    padding: 0px 4px;
+    color: #ffffff;
+    justify-content: center;
+    font-size: medium;
+    background-color: #f79a29;
+    border-radius: 5%;
+}
+
+.sesion {
+	position: relative;
+	left: 70%;
+}
+.objeto {
+
+	position: absolute;
+	top: 0.5%;
+	left: 85%;
+	width: 60%;
+}
+
+/*Meú de Navegación*/
+
+nav {
+	position: relative;
+	z-index: 1;
+	display: block;
+	border-top:solid 1px rgb(220, 214, 214);
+	/*box-shadow: 5px 4px 5px #9e9b9834;*/
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav ul li {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+nav a {
+	color: #000000;
+	text-decoration: none;
+	padding: 10px;
+}
+
+nav ul ul {
+	position: absolute;
+	top: 100%;
+	left: 0%;
+	display: none;
+}
+
+nav ul li:hover>ul {
+	display: flex;
+	flex-direction: column;
+	margin: 5%;
+	padding: 60%;
+	background-color: #ffffff;
+	box-shadow: 0 5px 10px #827f7b;
+	border-radius: 2%;
+}
+
+nav ul ul li {
+	width: 100%;
+	margin: 10%;
+	padding: 5%;
+}
+
+nav ul ul a {
+	padding: 1px;
+	background-color: #ffffff;
+}
+
+
+nav ul li a {
+	display: flex;
+	align-items: center;	
+}
+nav ul li a img {
+	width: 30px;
+}
+nav ul li button {
+	color: #ffffff;
+	border: none;
+	margin-top: 5%;
+	background: #f79a29;
+	padding: 7px 15px;
+	cursor: pointer;
+	font-size: 15px;
+	border-radius: 5px;
+}
+/*Elementos del Carrito en el Nav*/
+.carrito {
+	position: relative; /* Agrega esta propiedad para que el desplegable se posicione correctamente */
+	
+}
+.carritoDesplegable {
+	position: absolute;
+	top: 6%; /* Ajusta la posición vertical según sea necesario */
+	left: -100%;
+	width: 350%;
+	
+}
+.carrito:hover .carritoDesplegable {
+	display: block; /* Muestra el desplegable cuando se pasa el cursor sobre el carrito */
+}
+.itemCarrito{
+	display: flex;
+	position: relative;
+	left: -60%;
+	width: 20%;
+	
+}
+.itemCarrito img {
+	display: flex;
+	width: 50%;
+	margin: 0px;
+}
+
+/* SLIDER */
+
+.slider {
+	display: flex;
+	position: relative;
+	width: 100%;
+	height: 400px;
+	max-height: max-content;
+	overflow: auto;
+}
+
+.slide {
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	opacity: 0;
+	transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+	display: block;
+	opacity: 1;
+}
+
+.slide1 {
+	background-image:
+		url('http://localhost:8080/NexusCom/fotos/fotosBanner/banner-yeti-1920x600px-Cuylas-maig--2021.jpg');
+}
+
+.slide2 {
+	background-image:
+		url('http://localhost:8080/NexusCom/fotos/fotosBanner/Banner-Hoka Transport1920x600px_Cuylas.jpg');
+}
+
+.slide3 {
+	background-image:
+		url('http://localhost:8080/NexusCom/fotos/fotosBanner/Banner-Theragun-pro-G5-1920x600px-Cuylás-abril-2023-N.JPG');
+}
+
+/*Media queries para redimensionar el slider y responsive */
+@media ( max-width : 1024px) {
+	.slider {
+		height: 300px;
+	}
+}
+
+@media ( max-width : 768px) {
+	.slider {
+		height: 200px;
+	}
+}
+
+@media ( max-width : 576px) {
+	.slider {
+		height: 150px;
+	}
+}
+/*Carta presentación*/
+.bienvenida {
+	background-color: #fda92c4a;
+	padding: 7%;
+	border-radius: 19px;
+	box-shadow: #827f7b;
+}
+
+/*Formulario Login*/
+.login {
+	display: flex;
+	margin-top: 5%;
+	flex-direction: column;
+	background: #ffffff;
+	text-align: center;
+	width: 56%;
+	padding: 20px 25px;
+	box-shadow: 0 5px 10px #827f7b;
+}
+/*Formularios alta Usuarios, Productos, Vendedores y Proveedores*/
+.file-select {
+	position: relative;
+	display: inline-block;
+	margin-left: 5%;
+}
+
+.file-select::before {
+	background-color: #f79a29;
+	color: rgb(4, 4, 4);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	content: 'Seleccionar';
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+.file-select input[type="file"] {
+	opacity: 0;
+	width: 200px;
+	height: 32px;
+	display: inline-block;
+}
+
+#src-file::before {
+	content: 'Seleccionar archivo';
+}
+
+form {
+	display: flex;
+	width: 50%;
+	list-style: none;
+}
+
+.altaUsuario, .altaVendedor, .altaArticulo, .altaProveedor {
+	display: flex;
+	width: 50%;
+	margin-top: 5%;
+	flex-direction: column;
+	background: #ffffff;
+	text-align: center;
+	padding: 20px 25px;
+	box-shadow: 0 5px 10px #827f7b;
+}
+.modUsuario {
+	display: flex;
+	margin-top: 5%;
+	width: 30%;
+	flex-direction: column;
+	background: #ffffff;
+	text-align: center;
+	padding: 20px 25px;
+	box-shadow: 0 5px 10px #827f7b;
+}
+form li {
+	text-align: center;
+	color: #131212;
+	padding: 1px;
+	margin: 0%;
+}
+
+form li input {
+	outline: none;
+	border: none;
+	text-align: left;
+	color: #000000;
+	border-bottom: solid 1px #f79a29;
+	padding: 0 0px;
+	font-size: 19px;
+}
+
+#foto::before {
+	content: Elige una foto;
+	font-size: 1px;
+}
+
+form .title {
+	color: #0a0a0a;
+	font-size: 35px;
+	font-weight: 800;
+	margin-bottom: 35px;
+}
+
+form label {
+	margin-bottom: 35px;
+}
+
+form label .fa-solid {
+	font-size: 20px;
+	color: #f79a29;
+	margin-right: 10px;
+}
+
+form label input {
+	outline: none;
+	border: none;
+	color: #000000;
+	border-bottom: solid 1px #f79a29;
+	padding: 0 5px;
+	font-size: 15px;
+}
+#boton foto{
+	width: 60%;
+	border: none;
+	display: flex;
+	border-radius: 5px;
+	justify-content: center;
+	padding: 1%;
+	margin-left: 20%;
+	font-size: 17px;
+	background: #f79a29;
+}
+.submit {
+	width: 60%;
+	border: none;
+	display: flex;
+	border-radius: 5px;
+	justify-content: center;
+	padding: 1%;
+	margin-left: 20%;
+	font-size: 17px;
+	background: #f79a29;
+}
+
+form label input::placeholder {
+	color: #0c0a0a
+}
+
+form .link {
+	color: #0a0a0a;
+	margin-bottom: 15px;
+}
+
+form button {
+	color: #ffffff;
+	border: none;
+	margin-top: 5%;
+	background: #f79a29;
+	padding: 10px 15px;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+form a {
+	margin: 1%;
+}
+
+.mensajeError{
+	margin-top: 5%;
+	color: red;
+	border-radius: 7%;
+	border: 2px solid rgba(231, 209, 192, 0.715);
+}
+
+/*Listado Articulos*/
+
+.caja {
+  display: flex;
+  flex-wrap: wrap; 
+  margin: 5%;
+  justify-content:  center;
+  
+}
+.item {
+  flex: 0 0 25%;
+  margin: 2%;
+  padding: 10px;
+  box-sizing: border-box;
+  align-self: auto;
+}
+
+.item img {
+  display: flex;
+  width: 60%;
+  height: auto;
+  border-radius: 5%; 
+}
+
+.item div {
+  align-content: center;
+}
+.item button{
+	position: relative;
+	justify-items: center;
+	color: #ffffff;
+	border-radius: 5%;
+	border: 2px solid #8b7b7b ;
+	background: #f79a29;
+	cursor: pointer;
+	font-size: 15px;
+}
+
+/*Pagina administración*/
+
+.enlaces {
+	display: flex;
+	flex-direction: column; /* Cambia la dirección a column */
+	align-items: center; /* Alinea los elementos a la izquierda */
+	width: 100%;
+	max-width: 100%; /* Asegura que no exceda los bordes de la página */
+  }
+  
+  .enlacesAdmin {
+	display: flex;
+	flex-direction: column; /* Cambia la dirección a column */
+	align-items: center; /* Alinea los elementos a la izquierda */
+	margin-bottom: 10px; /* Agrega un margen inferior entre los enlaces */
+  }
+  .fotoAdmin {
+	display: flex;
+	margin-left: 25%;
+	max-width: 50%; /* Cambia el valor a 50% para reducir el tamaño */
+	height: auto;
+	border-radius: 5%;
+  }
+  
+/*Area Personal*/
+
+.fotoAreaUser{
+	border-radius: 5px;
+}
+
+/*Elementos del footer*/
+
+.copyrigthFooter {
+	display: flex;
+	position: relative;
+	top: 24%;
+	left: 2%;
+}
+
+.pagoFooter {
+	position: relative;
+	top: 24%;
+	left: 2%;
+	margin-left: 65px;
+}
+
+footer .fondo-blanco {
+	background-color: #fff;
+	padding: 20px;
+}
+
+footer .fondo-negro {
+	background-color: #000;
+	color: #fff;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.p {
+	color: #fff
+}

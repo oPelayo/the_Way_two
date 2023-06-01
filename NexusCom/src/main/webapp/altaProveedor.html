@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Alta nuevo Proveedor</title>
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css" />
+    <script src="Js/JavaScript.js"></script>
+    <link rel="icon" type="image/png" href="fotos/favicon.png">
+
+</head>
+
+<body>
+	
+    <header>
+     <div class="logo1" name="logoCasa">
+     	<a href="./Index.html" name="Inicio">
+        	<img src="./fotos/fotosHeader/Cuylas_Logo_Web.png"
+           	 width="16%" name="cuylasLogo" id="logoCuylas" alt="Cuylas"></a>
+     </div>   
+     	 
+     <div  class="searchName" >
+     	<form action="Listado" id="formBuscador" method="GET" onsubmit="obtenerPorNombre()" >
+     	<input type="text" class="inputBuscador" id="inputBuscador" name="buscar" placeholder="Buscar Productos">
+     	<input type="submit" class="botonBuscar" id="botonBuscar" value="Buscar" >
+     	</form> 
+     </div>
+     
+     <div id="objeto">
+     	<a href="administracion.html">
+     		<img src="./fotos/boba.png" id="hipervinAdm" style="width: 6%" >
+     	</a>
+     </div>
+     
+        
+     <div class="sesion" id="sesion">
+     
+     </div>
+        
+        <nav>
+            <ul>
+                <li><a href="#">Mujer</a>
+                    <ul>
+                        <li><a href="#">Esqui</a></li>
+                        <li><a href="#">Montaña</a></li>
+                        <li><a href="#">Zapatillas</a></li>
+                        <li><a href="#">Running</a></li>
+                        <li><a href="#">Training</a></li>
+                        <li><a href="#">Yoga</a></li>
+                        <li><a href="#">Lifestyle</a></li>
+                        <li><a href="#">Natacion</a></li>
+                        <li><a href="#">Tennis y Padel</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Hombre</a>
+                    <ul>
+                        <li><a href="#">Esqui</a></li>
+                        <li><a href="#">Montaña</a></li>
+                        <li><a href="#">Zapatillas</a></li>
+                        <li><a href="#">Running</a></li>
+                        <li><a href="#">Training</a></li>
+                        <li><a href="#">Yoga</a></li>
+                        <li><a href="#">Lifestyle</a></li>
+                        <li><a href="#">Natacion</a></li>
+                        <li><a href="#">Tennis y Padel</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Junior</a>
+                    <ul>
+                        <li><a href="#">Esqui</a></li>
+                        <li><a href="#">Montaña</a></li>
+                        <li><a href="#">Accesorios</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Material</a></li>
+                <li><a href="#">Marcas</a></li>
+                <li><a href="#">Blog</a></li>
+                <li>
+                    <div class="botones">
+                	    <button onclick="location.href='login.html'" name="submit" id="iniciarSesion" >Inicia sesión</button>
+	  				    <button onclick="cerrarSesion()" id="cerrarSesion">Salir</button>
+                    </div>
+	  			</li>	
+            </ul>
+        </nav>
+    </header>
+
+
+   <h2>Alta formulario proveedor</h2>
+      
+      <form action="AltaProveedor" class="altaProveedor" method="post" >
+		<h1 class="title">Alta Nuevo Proveedor</h1>
+ 
+			<li>
+				<label for="estado">Estado de la publicación</label>
+				<select name="estado" id="estado">
+					<option value="true" selected>Publicado</option>
+					<option value="false">No publicado</option>
+				</select>
+			</li>
+			
+			
+			<li>
+				<label>Nombre</label> 
+				<input type="text" name="nombre" required>
+			</li>
+			<li>
+				<label>E-mail</label> 
+				<input type="text" name="email" required>
+			</li>
+			<li>
+				<label>Telefono</label> 
+				<input type="text" name="telefono" required>
+			</li>
+            <input type="submit" class="submit" value="Dar de Alta">
+		
+
+		</form>
+
+    
+
+        
+    <footer>
+        
+
+        <div class="copyrigthFooter" name="Copyrigth">
+            <h5>Copyright © 2023 NexusCom Todos los derechos reservados</h5> 
+        </div>
+        <div class="pagoFooter" name="pagoSeguro">
+            <h5>Pago 100% Seguro | PayPal | Mastercard | Visa</h5> 
+        </div>
+
+
+
+    </footer>
+</body>
+  

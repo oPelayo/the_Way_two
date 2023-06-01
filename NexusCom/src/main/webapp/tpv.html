@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TPV Web</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		/* Estilos para el TPV */
+		.tpv {
+			background-color: #f2f2f2;
+			border: 1px solid #fafafa;
+			padding: 20px;
+			max-width: 600px;
+			margin: auto;
+			text-align: left;
+			font-size: 20px;
+			font-family: Arial, sans-serif;
+		}
+
+		.tpv label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		.tpv input[type="text"], .tpv input[type="number"], .tpv input[type="submit"] {
+			display: block;
+			margin-bottom: 10px;
+			padding: 10px;
+			width: 100%;
+			box-sizing: border-box;
+			border: 1px solid #ddd;
+			border-radius: 5px;
+			font-size: 20px;
+			font-family: Arial, sans-serif;
+		}
+
+		.tpv input[type="submit"] {
+			background-color: #ed7d31;
+			color: white;
+			cursor: pointer;
+		}
+
+		.tpv input[type="submit"]:hover {
+			background-color: #d1d3d4;
+		}
+
+		.tpv table {
+			width: 100%;
+			border-collapse: collapse;
+			margin-top: 20px;
+		}
+
+		.tpv th, .tpv td {
+			border: 1px solid #ddd;
+			padding: 10px;
+			text-align: left;
+			font-size: 20px;
+			font-family: Arial, sans-serif;
+		}
+
+		.tpv td:first-child {
+			width: 75%;
+		}
+
+		.tpv td:last-child {
+			width: 25%;
+			text-align: right;
+		}
+
+		.tpv tfoot td:first-child {
+			font-weight: bold;
+		}
+
+		.tpv input[type="search"] {
+			display: block;
+			margin-bottom: 10px;
+			padding: 10px;
+			width: 100%;
+			box-sizing: border-box;
+			border: 1px solid #ddd;
+			border-radius: 5px;
+			font-size: 20px;
+			font-family: Arial, sans-serif;
+		}
+	</style>
+</head>
+<body>
+	<div class="tpv">
+		<h1>TPV Web</h1>
+
+		<!--Busqueda Vendedor-->
+		<form action="#" method="post">
+			<label for="vendedor">Vendedor:</label>
+			<input type="search" id="search" name="search" placeholder="Nº Vendedor o nombre">
+			<input type="submit" value="Buscar">
+		</form>
+
+
+
+
+
+		<!-- Búsqueda de cliente -->
+		<form action="#" method="post">
+			<label for="search">Cliente:</label>
+			<input type="search" id="search" name="search" placeholder="Nº Teléfono">
+			<input type="submit" value="Buscar">
+		</form>
+
+		<!-- Formulario para agregar productos -->
+		<form action="#" method="post">
+			<label for="product">Producto:</label>
+			<input type="search" id="articulo" name="search" >
+			<input type="submit" value="Agregar al carrito">
+		</form>
+
+		<!-- Ticket -->
+		<h2>Ticket</h2>
+		<table>
+			<thead>
+				<tr>
+					<th>Producto y precio</th>
+				</tr>
+			</thead>
+			<tbody>
+				<!-- Aquí se agregarán los productos -->
+			</tbody>
+			<tfoot>
+				<tr>
+					<td>Total:</td>
+					<td id="total">0</td>
+				</tr>
+			</tfoot>
+		</table>
+    </div>
+</body>
+			

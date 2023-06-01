@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Alta Nuevo Vendedor</title>
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css" />
+    <script src="Js/JavaScript.js"></script>
+    <link rel="icon" type="image/png" href="fotos/favicon.png">
+
+</head>
+
+<body>
+	
+    <header>
+     <div class="logo1" name="logoCasa">
+     	<a href="./Index.html" name="Inicio">
+        	<img src="./fotos/fotosHeader/Cuylas_Logo_Web.png"
+           	 width="16%" name="cuylasLogo" id="logoCuylas" alt="Cuylas"></a>
+     </div>   
+     	 
+     <div  class="searchName" >
+     	<form action="Listado" id="formBuscador" method="GET" onsubmit="obtenerPorNombre()" >
+     	<input type="text" class="inputBuscador" id="inputBuscador" name="buscar" placeholder="Buscar Productos">
+     	<input type="submit" class="botonBuscar" id="botonBuscar" value="Buscar" >
+     	</form> 
+     </div>
+     
+     <div id="objeto">
+     	<a href="administracion.html">
+     		<img src="./fotos/boba.png" id="hipervinAdm" style="width: 6%" >
+     	</a>
+     </div>
+     
+        
+     <div class="sesion" id="sesion">
+     
+     </div>
+        
+        <nav>
+            <ul>
+                <li><a href="#">Mujer</a>
+                    <ul>
+                        <li><a href="#">Esqui</a></li>
+                        <li><a href="#">Montaña</a></li>
+                        <li><a href="#">Zapatillas</a></li>
+                        <li><a href="#">Running</a></li>
+                        <li><a href="#">Training</a></li>
+                        <li><a href="#">Yoga</a></li>
+                        <li><a href="#">Lifestyle</a></li>
+                        <li><a href="#">Natacion</a></li>
+                        <li><a href="#">Tennis y Padel</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Hombre</a>
+                    <ul>
+                        <li><a href="#">Esqui</a></li>
+                        <li><a href="#">Montaña</a></li>
+                        <li><a href="#">Zapatillas</a></li>
+                        <li><a href="#">Running</a></li>
+                        <li><a href="#">Training</a></li>
+                        <li><a href="#">Yoga</a></li>
+                        <li><a href="#">Lifestyle</a></li>
+                        <li><a href="#">Natacion</a></li>
+                        <li><a href="#">Tennis y Padel</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Junior</a>
+                    <ul>
+                        <li><a href="#">Esqui</a></li>
+                        <li><a href="#">Montaña</a></li>
+                        <li><a href="#">Accesorios</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Material</a></li>
+                <li><a href="#">Marcas</a></li>
+                <li><a href="#">Blog</a></li>
+                <li>
+                    <div class="botones">
+                	    <button onclick="location.href='login.html'" name="submit" id="iniciarSesion" >Inicia sesión</button>
+	  				    <button onclick="cerrarSesion()" id="cerrarSesion">Salir</button>
+                    </div>
+	  			</li>	
+            </ul>
+        </nav>
+    </header>
+
+
+	<form action="AltaVendedor" class="altaVendedor" method="post" enctype="multipart/form-data">
+		<h1 class="title">Alta Nuevo Vendedor</h1>
+
+			<li><label>Estado</label><input type="text" name="estado" required></li>
+			<li><label>Privilegios</label><input type="text" name="privilegios" required></li>
+			<li><label>Nombre</label> <input type="text" name="nombre" required></li>
+			<li><label>Apellidos</label> <input type="text" name="apellidos" required></li>
+			<li><label>NIF</label> <input type="text" name="nif" required></li>
+			<li><label>Fecha de nacimiento</label> <input type="date" name="fecha_nacimiento" style="font-size: 15px" required></li>
+			<li><label>puesto</label> <input type="text" name="puesto" required></li>
+			<li><label>Dirección</label> <input type="text" name="direccion" required></li>
+			<li><label>CodigoPostal </label> <input type="number" name="codigo_postal" required></li>
+			<li><label>Telefono</label> <input type="text" name="telefono" required></li>
+			<li><label>Email</label> <input type="text" name="email" required></li>
+            <li><label>Foto</label> <div class="file-select" id="src-file"><input type="file" name="foto"></div></li>
+			<li><label>Contraseña</label> <input type="password" name="password" required></li>
+			<!-- <li><label>Repite la contraseña</label><input type="checkbox" name=password2></li>  -->
+            <li>Notificaciones Promocionales<input type="checkbox"
+				name="notificaciones" value="true"></li>
+            <li>Acepta la ley de proteccion de datos <a href="https://en.wikipedia.org/wiki/General_Data_Protection_Regulation">GDPR</a><input type="checkbox" name="gdpr"
+				value="true" required></li>
+            <input type=submit class="submit" value="Alta Vendedor">
+		
+		</form>
+	
+</body>
+<footer>
+<div class="copyrigthFooter">
+            <h5>Copyright © 2023 NexusCom Todos los derechos reservados</h5> 
+        </div>
+        <div class="pagoFooter">
+            <h5>Pago 100% Seguro | PayPal | Mastercard | Visa</h5> 
+        </div>
+</footer>
+</html>
