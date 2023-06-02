@@ -32,7 +32,7 @@
 			<attribute name="javadoc_location" value="https://jakarta.ee/specifications/servlet/5.0/apidocs/"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Cosas/DAW/Programacion/NexusCom/src/main/webapp/WEB-INF/lib/json-20230227.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
+	<classpathentry kind="lib" path="C:/Cosas/DAW/Programacion/Z-Complementos/json-20230227.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
