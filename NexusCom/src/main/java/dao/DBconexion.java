@@ -17,7 +17,7 @@ public class DBconexion {
 
 
 
-			instance = DriverManager.getConnection("jdbc:mysql://localhost:3360/nexuscom", "root","Jacintoagromen33");
+			instance = DriverManager.getConnection("jdbc:mysql://localhost:3360/nexuscom", "root","");
 
 			return instance;
 
