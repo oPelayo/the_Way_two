@@ -93,9 +93,7 @@ function mostrarContenidoCarrito(id_carrito) {
 	document.getElementById("carritoDesplegable").addEventListener("click", mostrarContenidoCarrito);
 	// Aquí puedes realizar una llamada AJAX para obtener el contenido del carrito desde el servidor
 	// y luego mostrar los artículos en una ventana emergente o en un panel desplegable.
-	// Puedes usar la función obtenerEnJSON(idCarrito) del DAO en Java para obtener el contenido del carrito en formato JSON.
-
-	// Ejemplo de código para mostrar los artículos en una ventana emergente:
+	// Puedes usar la función obtenerEnJSON(idCarrito) del DAO en Java para obtener el contenido del carrito en formato JSON
 	// 1. Realiza la llamada AJAX para obtener el contenido del carrito en formato JSON
 	// 2. Parsea el JSON recibido en un objeto JavaScript
 	// 3. Muestra los artículos en una ventana emergente o en un panel desplegable utilizando el objeto JavaScript
