@@ -5,7 +5,7 @@ This project represents my inaugural venture into web development using Java, HT
 
 Project Overview
 
-The primary objective was the implementation of a customer management system for a tangible retail store. The system maintains two distinct databases—one dedicated to the physical store and the other to the online store.
+The primary objective was the implementation of a customer management system for a tangible retail store. The system maintains two distinct databases: one dedicated to the physical store and the other to the online store.
 
 Key Features
 
