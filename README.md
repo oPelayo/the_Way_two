@@ -10,9 +10,13 @@ The primary objective was the implementation of a customer management system for
 Key Features
 
 CRUD Operations: Developed robust functionalities for Products, Users, Staff, and Suppliers.
+
 Database Connections: Established essential connections between the dual databases.
+
 Frontend Design: Crafted a native frontend design, steering clear of style preprocessor usage.
+
 Integrated Development Environment (IDE): Leveraged Eclipse for project development.
+
 Learning Highlights
 This project served as a valuable learning experience, providing insights into the intricacies of web development and the nuances of a business logic framework for an online store.
 
